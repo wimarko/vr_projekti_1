@@ -12,7 +12,7 @@ public class ColorChange : MonoBehaviour
 
     private void Awake()
     {
-        mRenderer= GetComponent<MeshRenderer>();
+        mRenderer = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
