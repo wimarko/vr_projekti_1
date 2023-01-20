@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class SwitchControlPoint : MonoBehaviour
 {
     public InputActionReference switchReference = null;
-    public HiddenPlatform hiddenPlatform = null;
+    public GameObject hiddenPlatform = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,6 @@ public class SwitchControlPoint : MonoBehaviour
 
     public void SwitchTheSwitch()
     {
-        hiddenPlatform.SwitchActive();
+        hiddenPlatform.SetActive(!gameObject.activeInHierarchy);
     }
 }
