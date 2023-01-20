@@ -1637,6 +1637,17 @@ PrefabInstance:
       propertyPath: hiddenPlatform
       value: 
       objectReference: {fileID: 1517833627}
+    - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
+        type: 3}
+      propertyPath: hiddenPlatform
+      value: 
+      objectReference: {fileID: 1517833627}
+    - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
+        type: 3}
+      propertyPath: switchReference
+      value: 
+      objectReference: {fileID: -7489801079883832902, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
     - target: {fileID: 5487677969544811235, guid: d1082ceace227834282c1f65909bc748,
         type: 3}
       propertyPath: m_Name
@@ -1697,7 +1708,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1421697986401917695, guid: d1082ceace227834282c1f65909bc748, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d1082ceace227834282c1f65909bc748, type: 3}
 --- !u!1 &1545564967
 GameObject:
@@ -2204,19 +2216,19 @@ MonoBehaviour:
   m_PlayAudioClipOnHoverCanceled: 0
   m_AudioClipForOnHoverCanceled: {fileID: 0}
   m_PlayHapticsOnSelectEntered: 1
-  m_HapticSelectEnterIntensity: 0.537
-  m_HapticSelectEnterDuration: 0.3
+  m_HapticSelectEnterIntensity: 0.371
+  m_HapticSelectEnterDuration: 0.2
   m_PlayHapticsOnSelectExited: 1
-  m_HapticSelectExitIntensity: 0.589
-  m_HapticSelectExitDuration: 0.3
+  m_HapticSelectExitIntensity: 0.494
+  m_HapticSelectExitDuration: 0.2
   m_PlayHapticsOnSelectCanceled: 0
   m_HapticSelectCancelIntensity: 0
   m_HapticSelectCancelDuration: 0
   m_PlayHapticsOnHoverEntered: 1
-  m_HapticHoverEnterIntensity: 0.265
+  m_HapticHoverEnterIntensity: 0.186
   m_HapticHoverEnterDuration: 0.1
   m_PlayHapticsOnHoverExited: 1
-  m_HapticHoverExitIntensity: 0.277
+  m_HapticHoverExitIntensity: 0.194
   m_HapticHoverExitDuration: 0.1
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
@@ -2226,7 +2238,7 @@ MonoBehaviour:
   m_MaxRaycastDistance: 30
   m_RayOriginTransform: {fileID: 0}
   m_ReferenceFrame: {fileID: 0}
-  m_Velocity: 5
+  m_Velocity: 10
   m_Acceleration: 9.8
   m_AdditionalGroundHeight: 0.1
   m_AdditionalFlightTime: 0.5
@@ -2824,11 +2836,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1421697986401917695, guid: d1082ceace227834282c1f65909bc748,
+    - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
         type: 3}
       propertyPath: hiddenPlatform
       value: 
       objectReference: {fileID: 1739705942}
+    - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
+        type: 3}
+      propertyPath: switchReference
+      value: 
+      objectReference: {fileID: -7489801079883832902, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
     - target: {fileID: 5487677969544811235, guid: d1082ceace227834282c1f65909bc748,
         type: 3}
       propertyPath: m_Name

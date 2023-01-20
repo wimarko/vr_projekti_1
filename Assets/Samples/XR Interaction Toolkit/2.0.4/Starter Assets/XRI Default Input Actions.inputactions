@@ -1095,6 +1095,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Switchi",
+                    "type": "Button",
+                    "id": "ef2bf2cc-6816-4f95-b3a9-8593d7b70d6a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1117,6 +1126,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ColorChange",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a199275b-d910-4d0f-838c-59edbbcb587f",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switchi",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

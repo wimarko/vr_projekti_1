@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class SwitchControlPoint : MonoBehaviour
 {
-    public InputActionReference toggleReference = null;
+    public InputActionReference switchReference = null;
     public GameObject hiddenPlatform = null;
     // Start is called before the first frame update
     void Start()
