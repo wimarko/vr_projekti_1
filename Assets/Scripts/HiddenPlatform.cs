@@ -7,7 +7,7 @@ public class HiddenPlatform : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        gameObject.SetActive(false);
+        
     }
 
 
@@ -15,5 +15,14 @@ public class HiddenPlatform : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SwitchActive()
+    {
+        GameObject[] children = GetComponentsInChildren<GameObject>();
+        foreach (GameObject child in children)
+        {
+            child.SetActive(!gameObject.activeInHierarchy);
+        }
     }
 }
