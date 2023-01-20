@@ -35,7 +35,7 @@ public class SwitchControlPoint : MonoBehaviour
 
             buttonSphere.transform.position =
             new Vector3(
-            buttonSphere.transform.position.x - buttonDownDistance,
+            buttonSphere.transform.position.x + buttonDownDistance,
             buttonSphere.transform.position.y,
             buttonSphere.transform.position.z);
 
@@ -47,7 +47,7 @@ public class SwitchControlPoint : MonoBehaviour
 
         
 
-        if(buttonSphere.transform.position.x > buttonOriginalX) {
+        if(buttonSphere.transform.position.x < buttonOriginalX) {
             buttonSphere.transform.position += new Vector3(buttonReturnSpeed, 0, 0);
         }
         
