@@ -427,6 +427,18 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
+--- !u!1 &379843839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6975114302935640637, guid: d1082ceace227834282c1f65909bc748,
+    type: 3}
+  m_PrefabInstance: {fileID: 1029225513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &382831089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6975114302935640637, guid: d1082ceace227834282c1f65909bc748,
+    type: 3}
+  m_PrefabInstance: {fileID: 6960622877982116471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &424996124
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +774,11 @@ PrefabInstance:
       objectReference: {fileID: 1545564968}
     - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
         type: 3}
+      propertyPath: buttonSphere
+      value: 
+      objectReference: {fileID: 379843839}
+    - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
+        type: 3}
       propertyPath: hiddenPlatform
       value: 
       objectReference: {fileID: 2116858246}
@@ -1052,6 +1069,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1261844538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6975114302935640637, guid: d1082ceace227834282c1f65909bc748,
+    type: 3}
+  m_PrefabInstance: {fileID: 1529020694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1262967878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,6 +1744,11 @@ PrefabInstance:
       propertyPath: hiddenPlatform
       value: 
       objectReference: {fileID: 1517833627}
+    - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
+        type: 3}
+      propertyPath: buttonSphere
+      value: 
+      objectReference: {fileID: 1261844538}
     - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
         type: 3}
       propertyPath: hiddenPlatform
@@ -2931,6 +2959,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
+        type: 3}
+      propertyPath: buttonSphere
+      value: 
+      objectReference: {fileID: 382831089}
     - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
         type: 3}
       propertyPath: hiddenPlatform
