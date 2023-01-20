@@ -14,7 +14,7 @@ public class SwitchControlPoint : MonoBehaviour
     private float buttonReturnSpeed = 0.001f;
     private float buttonOriginalX;
 
-    private float hitAgainTime = 0.5f;
+    private float hitAgainTime = 1f;
     private float canHitAgain;
     private bool buttonHit = false;
     private bool active = false;
@@ -47,8 +47,8 @@ public class SwitchControlPoint : MonoBehaviour
 
         
 
-        if(buttonSphere.transform.position.x < buttonOriginalX) {
-            buttonSphere.transform.position += new Vector3(buttonReturnSpeed, 0, 0);
+        if(buttonSphere.transform.position.x > buttonOriginalX) {
+            buttonSphere.transform.position -= new Vector3(buttonReturnSpeed, 0, 0);
         }
         
     }
