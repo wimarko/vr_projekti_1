@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 308598966}
   m_Layer: 0
   m_Name: RightHand Controller
-  m_TagString: Untagged
+  m_TagString: PlayerHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -755,17 +755,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1613554342418707717, guid: d1082ceace227834282c1f65909bc748,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1545564968}
     - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
         type: 3}
       propertyPath: hiddenPlatform
       value: 
       objectReference: {fileID: 2116858246}
-    - target: {fileID: 4501627921789601937, guid: d1082ceace227834282c1f65909bc748,
-        type: 3}
-      propertyPath: switchReference
-      value: 
-      objectReference: {fileID: -7489801079883832902, guid: c348712bda248c246b8c49b3db54643f,
-        type: 3}
     - target: {fileID: 5487677969544811235, guid: d1082ceace227834282c1f65909bc748,
         type: 3}
       propertyPath: m_Name
@@ -2024,7 +2023,7 @@ GameObject:
   - component: {fileID: 1842522755}
   m_Layer: 0
   m_Name: LeftHand Controller
-  m_TagString: Untagged
+  m_TagString: PlayerHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
