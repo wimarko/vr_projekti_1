@@ -36,6 +36,7 @@ public class Rotator : MonoBehaviour
         requiresStartAngle = true;
     }
 
+    [System.Obsolete]
     private void GrabbedBy(SelectEnterEventArgs arg0)
     {
         interactor = GetComponent<XRGrabInteractable>().selectingInteractor;
