@@ -17,13 +17,16 @@ public class Rotator : MonoBehaviour
     private bool requiresStartAngle = true;
     private bool shouldGetHandRotation = false;
     private XRGrabInteractable grabInteractor => GetComponent<XRGrabInteractable>();
+
     // Start is called before the first frame update
+    [System.Obsolete]
     private void OnEnable()
     {
         grabInteractor.selectEntered.AddListener(GrabbedBy);
         grabInteractor.selectExited.AddListener(GrabEnd);
     }
 
+    [System.Obsolete]
     private void OnDisable()
     {
         grabInteractor.selectEntered.RemoveListener(GrabbedBy);
