@@ -21,16 +21,15 @@ public class Canvas : MonoBehaviour
     void Update()
     {
         //otetaan objektin rotaatio
-        float rotationZ = lController.transform.rotation.z;
+        float rotationZ = lController.transform.localEulerAngles.z;
         //p‰ivitet‰‰n UI:n teksti
-        textLRotation.text= "Z " +  rotationZ.ToString("F2")+"\n"
-            + "X " + lController.transform.rotation.x.ToString("F2") + "\n"
-            +"Y " + lController.transform.rotation.y.ToString("F2");
-
+        textLRotation.text = "Z " + rotationZ.ToString("F2") + "\n"
+            + "X " + lController.transform.localEulerAngles.x.ToString("F2") + "\n"
+            + "Y " + lController.transform.localEulerAngles.y.ToString("F2");
         //p‰ivitet‰‰n UI:n teksti
-        textRotationR.text = "Z " + controllerR.transform.rotation.z.ToString("F2") + "\n"
-            + "X " + controllerR.transform.rotation.x.ToString("F2") + "\n"
-            + "Y " + controllerR.transform.rotation.y.ToString("F2") + "\n";
+        textRotationR.text = "Z " + controllerR.transform.localEulerAngles.z.ToString("F2") + "\n"
+            + "X " + controllerR.transform.localEulerAngles.x.ToString("F2") + "\n"
+            + "Y " + controllerR.transform.localEulerAngles.y.ToString("F2") + "\n";
 
 
     }
