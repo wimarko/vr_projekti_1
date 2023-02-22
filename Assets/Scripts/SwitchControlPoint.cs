@@ -10,6 +10,8 @@ public class SwitchControlPoint : MonoBehaviour
 
     [SerializeField] GameObject buttonSphere;
 
+    private AudioSource audioSource;
+
     private float buttonDownDistance = 0.025f;
     private float buttonReturnSpeed = 0.001f;
     private float buttonOriginalX;
@@ -21,6 +23,7 @@ public class SwitchControlPoint : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         buttonOriginalX = buttonSphere.transform.position.x;
     }
 
@@ -32,6 +35,10 @@ public class SwitchControlPoint : MonoBehaviour
             buttonHit = false;
 
             active = !active;
+            if(active)
+            {
+                audioSource.Play();
+            }
 
             buttonSphere.transform.position =
             new Vector3(

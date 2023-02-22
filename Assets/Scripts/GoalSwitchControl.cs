@@ -10,18 +10,21 @@ public class GoalSwitchControl : MonoBehaviour
 
     [SerializeField] GameObject buttonSphere;
 
-    private float buttonDownDistance = 0.025f;
-    private float buttonReturnSpeed = 0.001f;
-    private float buttonOriginalX;
+    private AudioSource audioSource;
+    
 
-    //private float hitAgainTime = 1f;
-    //private float canHitAgain;
+    
     private bool buttonHit = false;
-    private bool active = false;
+    //private bool active = false;
 
     void Start()
     {
-        buttonOriginalX = buttonSphere.transform.position.x;
+        audioSource= GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource is NuLL!");
+        }
     }
 
 
@@ -29,25 +32,9 @@ public class GoalSwitchControl : MonoBehaviour
     {
         if (buttonHit == true)
         {
-            //buttonSphere.transform.position =
-            //new Vector3(
-            //buttonSphere.transform.position.x + buttonDownDistance,
-            //buttonSphere.transform.position.y,
-            //buttonSphere.transform.position.z);
-
-
-            //Maaliteksti näkyviin..
-            //active = true;
             goalPanel.SetActive(true);
+            Destroy(gameObject);
         }
-
-
-
-        if (buttonSphere.transform.position.x > buttonOriginalX)
-        {
-            buttonSphere.transform.position -= new Vector3(buttonReturnSpeed, 0, 0);
-        }
-
     }
 
     private void OnTriggerStay(Collider other)
@@ -55,8 +42,7 @@ public class GoalSwitchControl : MonoBehaviour
         if (other.CompareTag("PlayerHand") && !buttonHit)
         {
             buttonHit = true;
+            audioSource.Play();
         }
     }
-
-
 }
