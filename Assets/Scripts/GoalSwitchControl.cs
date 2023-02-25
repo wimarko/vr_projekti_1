@@ -10,7 +10,7 @@ public class GoalSwitchControl : MonoBehaviour
 
     [SerializeField] GameObject buttonSphere;
 
-    private AudioSource audioSource;
+    //private AudioSource audioSource;
     
 
     
@@ -19,12 +19,12 @@ public class GoalSwitchControl : MonoBehaviour
 
     void Start()
     {
-        audioSource= GetComponent<AudioSource>();
+        //audioSource= GetComponent<AudioSource>();
 
-        if (audioSource == null)
-        {
-            Debug.LogError("AudioSource is NuLL!");
-        }
+        //if (audioSource == null)
+        //{
+        //    Debug.LogError("AudioSource is NuLL!");
+        //}
     }
 
 
@@ -42,7 +42,7 @@ public class GoalSwitchControl : MonoBehaviour
         if (other.CompareTag("PlayerHand") && !buttonHit)
         {
             buttonHit = true;
-            audioSource.Play();
+            //audioSource.Play();
         }
     }
 }
